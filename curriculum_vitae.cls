@@ -13,7 +13,7 @@
 %%%%%%%%%
 % CLASS %
 %%%%%%%%%
-\ProvidesClass{twentysecondcv}[2015/02/28 CV class]
+\ProvidesClass{curriculum_vitae}[2015/02/28 CV class]
 \LoadClass{article}
 \NeedsTeXFormat{LaTeX2e}
 
