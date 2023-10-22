@@ -15,14 +15,15 @@
 %%%%%%%%%%%%%%%%%%%%%%
 %% PROFILE SIDE BAR %%
 %%%%%%%%%%%%%%%%%%%%%%
-\profilepic{alice.jpeg}          % path of profile pic
-\cvname{Alice}                   % your name
-\cvjobtitle{Adventurer}          % your actual job position
-\cvdate{26 November 1865}        % date of birth
-\cvaddress{United Kingdom}       % address
-\cvnumberphone{+39 0325658974}   % telephone number
-\cvmail{alice@wonderland.com}    % e-mail
-\cvsite{http://en.wikipedia.org} % personal site
+\profilepic{alice.jpeg}                                     % path of profile pic
+\cvname{Alice}                                              % your name
+\cvjobtitle{Adventurer}                                     % your actual job position
+\cvdate{26 November 1865}                                   % date of birth
+\cvaddress{United Kingdom}                                  % address
+\cvnumberphone{\href{tel: +390325658974}{+39 0325658974}}   % telephone number
+\cvmail{alice@wonderland.com}                               % e-mail
+\cvsite{\href{https://www.linkedin.com}{linkedin.com}}      % LinkedIn site
+\cvgit{\href{https://github.com/sacklippe}{github.com}}     % GitHub site
 
 \aboutme{
 Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.
@@ -36,7 +37,26 @@ Alice is a sensible prepubescent girl from a wealthy English family who finds he
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Skill list section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\skillslist{{lovely},{narcissistic}}
+\skillslist{{lovely},{narcissistic}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Languages section, each language requires a skill desciption %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcvlanguage{English}{Native}
+\addcvlanguage{Spanish}{Fluent}
+\addcvlanguage{French}{Intermediate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Awards section, each award requires a year and a description %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcvaward{1987}{All-Time Best Fantasy Novel.}
+\addcvaward{1998}{All-Time Best Fantasy Novel before 1990.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Extracurricular section, each course requires a platform and a title %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addcvcourse{edX}{Telling fairy tales}
+\addcvcourse{Coursera}{Alice in wonderland}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% END PROFILE SIDE BAR DEFINITION %%
@@ -51,9 +71,10 @@ Alice is a sensible prepubescent girl from a wealthy English family who finds he
 %%%%%% BODY %%%%%%
 %%%%%%%%%%%%%%%%%%
 \section{Education}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%% TWENTY LIST ITEMS %%%%%%%%%%%%%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
+%%%%% Four arguments: date; title; where; description %%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{twenty}
   \twentyitem
@@ -79,6 +100,7 @@ Alice is a sensible prepubescent girl from a wealthy English family who finds he
 \end{twenty}
 
 \section{Experience}
+
 \begin{twenty}
     \twentyitem
     {1900}
@@ -105,16 +127,17 @@ Alice is a sensible prepubescent girl from a wealthy English family who finds he
 %%%%% SECOND PAGE %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-%\newpage % Start a new page
-%\makenextprofile % Print the sidebar
+\newpage % Start a new page
+\makenextprofile % Print the sidebar
 
 %%%%%%%%%%%%%%%%%%
 %%%%%% BODY %%%%%%
 %%%%%%%%%%%%%%%%%%
 
 \section{Publications}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS %%%%%%%%%%%%%
+%%%%%%%% TWENTY LIST SHORTITEMS %%%%%%%%%%%%%
 %%% Two arguments: date; title/description %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{twentyshort}
@@ -137,6 +160,7 @@ Alice is a sensible prepubescent girl from a wealthy English family who finds he
 
 % Simple Section
 \section{Interests}
+
 The heroine and the dreamer of Wonderland;  Alice is the principal character.
 
 %%%%%%%%%%%%%%%%%%%%
