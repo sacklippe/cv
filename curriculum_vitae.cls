@@ -173,31 +173,31 @@
 
 % languages
 \newtoks\languagelist
-\newcommand{\addcvlanguage}[2]{%
-    \ifx\empty\languagelist\relax % Check if the list is empty
-        \languagelist={#1 & #2}%
+\newcommand{\addcvlanguage}[2]{
+    \ifx\empty\languagelist\relax
+        \languagelist={#1 & #2}
     \else
         \languagelist=\expandafter{\the\languagelist \\ #1 & #2}%
     \fi
 }
-\newcommand{\renderlanguages}{%
-    \renewcommand{\arraystretch}{1.3}
-    \begin{tabularx}{0.8\linewidth}{>{\bfseries}l@{\hspace{10pt}}X} % Adjust the 10pt to your liking
+\newcommand{\renderlanguages}{
+    \renewcommand{\arraystretch}{1.1}
+    \begin{tabularx}{0.8\linewidth}{>{\bfseries}l@{\hspace{10pt}}X}
         \the\languagelist
     \end{tabularx}
 }
 
 % awards
 \newtoks\awardlist
-\newcommand{\addcvaward}[2]{%
-    \ifx\empty\awardlist\relax % Check if the list is empty
-        \awardlist={#1 & #2}%
+\newcommand{\addcvaward}[2]{
+    \ifx\empty\awardlist\relax
+        \awardlist={#1 & #2}
     \else
         \awardlist=\expandafter{\the\awardlist \\ #1 & #2}%
     \fi
 }
-\newcommand{\renderawards}{%
-    \renewcommand{\arraystretch}{1.3}
+\newcommand{\renderawards}{
+    \renewcommand{\arraystretch}{1.1}
     \begin{tabularx}{\linewidth}{@{} >{\bfseries}l @{\hspace{10pt}} X @{}}
         \the\awardlist
     \end{tabularx}
@@ -310,12 +310,7 @@
 \newcommand*\round[1]{
 	\tikz[baseline=(char.base)]\node[anchor=north west, draw, rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=maingray, text=white](char){#1};%
 }
-\renewcommand{\section}[1]{
-	{
-		\color{maingray}
-		\Large\round{#1}
-	}
-}
+\renewcommand{\section}[1]{{\color{maingray}\Large\round{#1}\\[0.5\baselineskip]}}
 
 \renewcommand{\subsection}[1]{
 	\par\vspace{.5\parskip}{
