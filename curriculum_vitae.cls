@@ -158,22 +158,6 @@
   }
 }
 
-% text style skills
-\newcommand{\givenskill}{}
-  \newcommand\skillstext[1]{
-    \renewcommand{\giventextskill}{
-    \begin{flushleft}
-    \noindent
-    \foreach [count=\i] \x/\y in {#1}
-    {
-      \x$ \star $\y
-    }
-    \end{flushleft}
-  }
-}
-
-\newcommand{\giventextskill}{}
-
 \newcommand{\makeprofile}
 {
   % grey bar on the left side
@@ -221,12 +205,6 @@
       % skills with scale
       \profilesection{Skill}{5cm}
       \givenskill
-      \giventextskill
-      \noindent
-      \scriptsize
-      \noindent
-      (*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
-
     \end{flushleft}
   \end{textblock}
   \vspace{-10pt}
