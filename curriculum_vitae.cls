@@ -362,5 +362,5 @@
 %%%%%%%%%%%%%%%%
 % PAGE SETTING %
 %%%%%%%%%%%%%%%%
-\RequirePackage[left=7.3cm,top=0.1cm,right=0.5cm,bottom=0.2cm,nohead,nofoot]{geometry}
+\RequirePackage[left=7.3cm,top=0.1cm,right=0.8cm,bottom=0.2cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
