@@ -29,53 +29,31 @@
 Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% Skill bar section, each skill must have a value between 0 an 6 (float) %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% skills
 \skills{{Java/0.01},{polite/4},{good manners/4},{outgoing/4.3},{pursuer of rabbits/5}}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% Skill list section %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \skillslist{{lovely},{narcissistic}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% Languages section, each language requires a skill desciption %%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% languages
 \addcvlanguage{English}{Native}
 \addcvlanguage{Spanish}{Fluent}
 \addcvlanguage{French}{Intermediate}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% Awards section, each award requires a year and a description %%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% awards
 \addcvaward{1987}{All-Time Best Fantasy Novel.}
 \addcvaward{1998}{All-Time Best Fantasy Novel before 1990.}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% Extracurricular section, each course requires a platform and a title %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% extracurricular courses
 \addcvcourse{edX}{Telling fairy tales}
 \addcvcourse{Coursera}{Alice in wonderland}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% END PROFILE SIDE BAR DEFINITION %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% FIRST PAGE %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
+% sidebar
 \makeprofile  % Print sidebar
 
-%%%%%%%%%%%%%%%%%%
-%%%%%% BODY %%%%%%
-%%%%%%%%%%%%%%%%%%
+% body
 \section{Education}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%% TWENTY LIST ITEMS %%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{twenty}
   \twentyitem
     {since 1865}
@@ -100,7 +78,6 @@ Alice is a sensible prepubescent girl from a wealthy English family who finds he
 \end{twenty}
 
 \section{Experience}
-
 \begin{twenty}
     \twentyitem
     {1900}
@@ -119,27 +96,17 @@ Alice is a sensible prepubescent girl from a wealthy English family who finds he
     {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
 \end{twenty}
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%% ENDBODY %%%%%%
-%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% SECOND PAGE %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage % Start a new page
-\makenextprofile % Print the sidebar
+\newpage
 
-%%%%%%%%%%%%%%%%%%
-%%%%%% BODY %%%%%%
-%%%%%%%%%%%%%%%%%%
+% sidebar
+\makenextprofile
 
+% body
 \section{Publications}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%% TWENTY LIST SHORTITEMS %%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{twentyshort}
   \twentyitemshort
     {1865}
@@ -158,12 +125,7 @@ Alice is a sensible prepubescent girl from a wealthy English family who finds he
     {Chapter Five,  Advice from a Caterpillar.}
 \end{twentyshort}
 
-% Simple Section
 \section{Interests}
-
 The heroine and the dreamer of Wonderland;  Alice is the principal character.
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%% ENDBODY %%%%%%
-%%%%%%%%%%%%%%%%%%%%
 \end{document} 
