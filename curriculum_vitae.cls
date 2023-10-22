@@ -44,9 +44,8 @@
 %%%%%%%%%%%
 % OPTIONS %
 %%%%%%%%%%%
-% icons
 \newbool{icon}
-\DeclareOption{icon}{%
+\DeclareOption{icon}{
   \booltrue{icon}
 }
 \DeclareOption{print}{\def\@cv@print{}}
@@ -101,9 +100,9 @@
 \pagestyle{empty} % Disable headers and footers
 \setlength{\parindent}{0pt} % Disable paragraph indentation
 
-%%%%%%%%%%%%%%%%%%%%%%%%
-% Profile left SideBar %
-%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%
+% PROFILE SIDEBAR %
+%%%%%%%%%%%%%%%%%%%
 \setlength{\TPHorizModule}{1cm} % Left margin
 \setlength{\TPVertModule}{1cm} % Top margin
 
@@ -134,16 +133,11 @@
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
 \newcommand{\cvgit}[1]{\renewcommand{\cvgit}{#1}}
 
-%% icon in blue circle; #1 -> icon
-%\newcommand*\icon[1]{\tikz[baseline=(char.base)]{
-%  \node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}
-%}
-
 % Custom element
 \newlength{\tecelementheight}
 \setlength{\tecelementheight}{12pt} 
-\newcommand{\tecelement}[1]{%
-  \begin{tikzpicture}[baseline=-0.5*\tecelementheight]  % Adjusting the baseline
+\newcommand{\tecelement}[1]{
+  \begin{tikzpicture}[baseline=-0.5*\tecelementheight]
     \node[draw=mainblue, fill=mainblue, text=white, inner sep=1.6pt, rounded corners, align=center, minimum height=\tecelementheight, font=\small] {#1};
   \end{tikzpicture}
 }
@@ -211,24 +205,24 @@
 % extracurricular courses
 \newtoks\courselist
 \newcommand{\addcvcourse}[2]{
-    \ifx\empty\courselist\relax % Check if the list is empty
+    \ifx\empty\courselist\relax
         \courselist={#1 & #2}
     \else
         \courselist=\expandafter{\the\courselist \\ #1 & #2}%
     \fi
 }
-\newcommand{\rendercourses}{%
-    \renewcommand{\arraystretch}{1.3}
+\newcommand{\rendercourses}{
+    \renewcommand{\arraystretch}{1.1}
     \begin{tabularx}{\linewidth}{@{} >{\bfseries}l @{\hspace{10pt}} X @{}}
         \the\courselist
     \end{tabularx}
 }
 
 % list of technologies
-\newcommand\tectext[1]{ 
+\newcommand{\tectext}[1]{ 
   \begin{flushleft}
     \foreach \skill in {#1}{ 
-      \tecelement{\skill}\hspace{0.5pt} % Adjust the horizontal space between elements
+      \tecelement{\skill}\hspace{0.5pt}
     }
   \end{flushleft}
 }
