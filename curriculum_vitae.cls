@@ -134,10 +134,10 @@
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
 \newcommand{\cvgit}[1]{\renewcommand{\cvgit}{#1}}
 
-% icon in blue circle; #1 -> icon
-\newcommand*\icon[1]{\tikz[baseline=(char.base)]{
-  \node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}
-}
+%% icon in blue circle; #1 -> icon
+%\newcommand*\icon[1]{\tikz[baseline=(char.base)]{
+%  \node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}
+%}
 
 % Custom element
 \newlength{\tecelementheight}
