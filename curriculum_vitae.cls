@@ -106,6 +106,8 @@
 \setlength{\TPHorizModule}{1cm} % Left margin
 \setlength{\TPVertModule}{1cm} % Top margin
 
+\newcommand{\spacing}{1.2}
+
 \newlength\imagewidth
 \newlength\imagescale
 \pgfmathsetlength{\imagewidth}{5cm}
@@ -120,7 +122,9 @@
 	\addtolength\TotalSectionLength{-2.22221pt}% Modifier to remove overfull box warning
 	\vspace{8pt}% Whitespace before the section title
 	{\color{black!80} \huge #1 \rule[0.15\baselineskip]{\TotalSectionLength}{1pt}}% Print the title and auto-width rule
+    \par
 }
+
 
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
@@ -181,7 +185,8 @@
     \fi
 }
 \newcommand{\renderlanguages}{
-    \renewcommand{\arraystretch}{1.1}
+    \renewcommand{\arraystretch}{\spacing}
+    \vspace{-\spacing\baselineskip}
     \begin{tabularx}{0.8\linewidth}{>{\bfseries}l@{\hspace{10pt}}X}
         \the\languagelist
     \end{tabularx}
@@ -197,7 +202,8 @@
     \fi
 }
 \newcommand{\renderawards}{
-    \renewcommand{\arraystretch}{1.1}
+    \renewcommand{\arraystretch}{\spacing}
+    \vspace{-\spacing\baselineskip}
     \begin{tabularx}{\linewidth}{@{} >{\bfseries}l @{\hspace{10pt}} X @{}}
         \the\awardlist
     \end{tabularx}
@@ -213,7 +219,8 @@
     \fi
 }
 \newcommand{\rendercourses}{
-    \renewcommand{\arraystretch}{1.1}
+    \renewcommand{\arraystretch}{\spacing}
+    \vspace{-\spacing\baselineskip}
     \begin{tabularx}{\linewidth}{@{} >{\bfseries}l @{\hspace{10pt}} X @{}}
         \the\courselist
     \end{tabularx}
