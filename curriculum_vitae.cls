@@ -139,13 +139,6 @@
   \node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}
 }
 
-% Text in square node with rounded corners; #1 -> text, #2 -> color
-%\newcommand*\round[2]{%
-%\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle,
-%  rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm,
-%  fill=#2,#2,text=white](char){#1};%
-%}
-
 % Custom element
 \newlength{\tecelementheight}
 \setlength{\tecelementheight}{12pt} 
