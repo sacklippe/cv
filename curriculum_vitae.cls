@@ -146,8 +146,9 @@
 \newcommand{\largedot}{\hspace{0.5em}\raisebox{-0.5ex}{\large\textbullet}\hspace{0.5em}} 
 
 % skill bar graphs
-\newcommand\skills[1]{ 
-	\renewcommand{\skills}{
+\newcommand{\renderskillbars}{}
+\newcommand{\skillbars}[1]{ 
+	\renewcommand{\renderskillbars}{
 		\begin{tikzpicture}
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
@@ -159,9 +160,9 @@
 }
 
 % skill list
-\newcommand{\renderskills}{} % default, does nothing
-\newcommand{\skillslist}[1]{ 
-    \renewcommand{\renderskills}{
+\newcommand{\renderskillist}{}
+\newcommand{\skilllist}[1]{ 
+    \renewcommand{\renderskillist}{
         \begin{flushleft}
             \foreach \skill in {#1} {
                 \tecelement{\skill}\hspace{1pt}
@@ -219,7 +220,7 @@
 }
 
 % list of technologies
-\newcommand{\tectext}[1]{ 
+\newcommand{\teclist}[1]{ 
   \begin{flushleft}
     \foreach \skill in {#1}{ 
       \tecelement{\skill}\hspace{0.5pt}
@@ -279,9 +280,9 @@
 		}
 
         % skills
-		\profilesection{Skills}
-		\skills
-        \renderskills
+        \profilesection{Skills}
+		\renderskillbars
+        \renderskillist
 
 	\end{textblock}
 }
